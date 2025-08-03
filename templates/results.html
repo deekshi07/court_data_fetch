@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 60px auto;
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 16px;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Case Details</h2>
+        <p><strong>Parties:</strong> {{ data.party_names }}</p>
+        <p><strong>Filing Date:</strong> {{ data.filing_date }}</p>
+        <p><strong>Next Hearing:</strong> {{ data.next_hearing }}</p>
+        <p><a href="{{ data.order_link }}" target="_blank">Download Order PDF</a></p>
+    </div>
+</body>
+</html>

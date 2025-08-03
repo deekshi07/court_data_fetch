@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Court Data Fetcher</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Case Details</h1>
+        <form method="POST" action="/fetch">
+            <label>Case Type:</label>
+            <input type="text" name="case_type" required>
+            <label>Case Number:</label>
+            <input type="text" name="case_number" required>
+            <label>Filing Year:</label>
+            <input type="text" name="filing_year" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
